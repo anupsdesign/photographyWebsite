@@ -59,3 +59,9 @@ button span{
     position: relative;
     padding-top: 40px;
 }
+
+@media only screen and (min-width:416px) and (max-width:600px){
+   .image-grid{
+       grid-template-columns: repeat(auto-fill,minmax(400px,3fr));
+} 
+}
