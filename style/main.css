@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+@import url('https://fonts.googleapis.com/css? family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+body{
+            margin: 0;
+            padding: 0;
+        }
+    
+header{
+            position: fixed;
+            width: 100%;
+            background-color: #F2F2F2;
+            height: 85px;
+            z-index: 1000;
+            transition: all 0.2s ease-in-out;
+        }
+nav{
+            line-height: 85px;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+nav a{
+            text-decoration: none;
+            color:rgba(0,0,0,.5);;
+            padding: 20px;
+            text-transform: uppercase;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            font-family: 'Crimson Text', serif;
+        }
+nav a:hover:not(:nth-child(3n)):not(.header-icons){
+            border-bottom: 2px solid;
+            color:#121212;
+        }
+.logo{
+            font-family: 'Arizonia', cursive;
+            text-transform: none;
+            font-size: 2em; 
+            color: #121212;
+        }
+span.dot{
+            color: rgba(147,202,75,1.0);
+        }
+nav a.active{
+            border-bottom: 2px solid;
+            color:#121212;
+        }
+nav a.header-icons{
+            float: right;
+            position: absolute;
+            padding: 0px;
+            right: 3em;
+            margin-right: 1em;
+        }
+header .mobile-logo{
+            text-decoration: none;
+            text-align: center;
+            color: inherit;
+            display: none;
+            text-transform: uppercase;
+            line-height: 85px;
+            width: 150px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+.bg-color-change{
+            -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            background-color: RGBA(255, 255, 255, 1.00);
+        }
+
+.social-icons{
+    position: absolute;
+    /*background-color: aquamarine;*/
+    right: 2%;
+    top: 0%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.social-icons ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .5em;
+    line-height: 5.8em;
+}
+.social-icons ul li{
+    display: inline-block;
+    padding: 0px;
+}
+
+label{
+            position: relative;
+            right: 20px;
+            font-size: 1.5em;
+            line-height: 85px;
+            width: 30px;
+            float: right;
+            display: none;
+            cursor: pointer;
+        }
+#toggle{
+            display: none;
+        }
+#home-landing{
+    top: 85px;
+    position: relative;
+    height: auto;
+    width: 100%;
+} 
+.landing-content{
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.grid{
+    top: 85px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(570px,3fr));
+
+    justify-items: center;
+    grid-gap: 0px;
+    grid-row-gap: 10px;
+    padding-top: 25px;
+    padding-bottom:25px;
+    padding: 20px;
+}
+
+.grid div{
+    width: 570px;
+    height: auto;
+
+    position: relative;
+    overflow: hidden;
+}
+img{
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+}
+.overlay {
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    text-align: center;
+    transition: .3s;
+    margin-bottom: -10px;
+    padding-bottom: 0;
+    height: 0;
+}
+.grid div:hover img{
+    filter: brightness(.6) saturate(1.08);
+    transition: .3s;
+}
+.grid div:hover .overlay {
+    transition: .3s;
+    opacity: 1;
+}
+.grid div a p{
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    font-size: 3em;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+.grid div a:hover p{
+    opacity: 1;
+    z-index: 999;
+}
+    
+footer{
+            position: relative;
+            top: 85px;
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 0;
+        }
+footer p{
+            position: relative;
+            margin: 0;
+            line-height: 90px;
+            font-family: 'Cormorant', serif;
+        }
+@media only screen and (max-width:740px){
+    .social-icons{
+        display: none !important;
+    }
+        }
+@media only screen and (max-width:535px){
+            label{
+                display: block;
+            }
+            nav a:nth-child(3n){
+                display: none;
+            }
+            nav a{
+                display: block;
+                color:rgba(0,0,0,.5);
+            }
+            nav a.active{
+                border: none;
+                color: inherit;
+            }
+            nav a:hover:not(:nth-child(3n)):not(.header-icons){
+                border-bottom: none;
+                color: inherit;
+            }
+            nav{
+                z-index: -1;
+                background-color: rgba(223,223,223,1.0);
+                position: relative;
+                top: 85px;
+                transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                animation: slide-out 0.3s forwards;
+                -webkit-animation: slide-out 0.3s forwards;
+            }
+            #toggle:checked + nav:not(:nth-child(3n)){
+                display: block;
+                animation: slide-in 0.4s forwards;
+                -webkit-animation: slide-in 0.4s forwards;
+            }
+            header .mobile-logo{
+                display: block;
+                margin: 0;
+                font-family: 'Arizonia', cursive;
+                text-transform: none;
+                font-size: 2em; 
+                color: #121212;
+            }
+            
+            @keyframes slide-in {
+                100% { transform: translateX(0%); }
+            }
+            @keyframes slide-out {
+                0% { transform: translateX(0%); }
+                100% { transform: translateX(100%); }
+            }
+        }
+
+@media only screen and (min-width:416px) and (max-width:600px){
+    .grid{
+    grid-template-columns: repeat(auto-fill,minmax(400px,3fr));
+}
+
+.grid div{
+    width: 400px;
+}
+}
+@media only screen and (min-width:300px) and (max-width:415px){
+.grid{
+    grid-template-columns: repeat(auto-fill,minmax(310px,3fr));
+}
+
+.grid div{
+    width: 310px;
+}
+}

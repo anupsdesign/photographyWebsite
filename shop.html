@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shop</title>
+    <link rel="icon" href="images/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/shop.css">   
+    <meta http-equiv="imagetoolbar" content="no" />  
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js"></script> 
+      
+    <style media="screen">
+        * {box-sizing: border-box;}
+    </style>  
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="mobile-logo" title="Home">
+            A<span class="dot">.</span>
+        </a>
+        <label for="toggle" class="menu">&#9776;</label>
+        <!--<label for="toggle">&#x2715;</label>-->
+        <input type="checkbox" id="toggle">
+        
+      <nav>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html" class="logo">A<span class="dot">.</span></a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html" class="active">Shop</a>
+         <div class="social-icons">
+
+            <ul>
+            <li>
+                <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+            </li>  
+            <li>
+                <i class="fab fa-twitter"></i>
+            </li>    
+          </ul>
+
+        </div> 
+      </nav>
+    </header>
+      <section id="home-landing">
+        <div class="landing-content">
+            <div class="break"></div>
+            <div class="grid">
+                
+                <div>
+                    <a href="#" class="scroll"><p>&#36;190.00</p><img src="./images/16.jpg" width="100%"></a>
+                </div>
+                <div>
+                    <a href="#" class="scroll"><p>&#36;180.00</p><img src="./images/15.jpg" width="100%"></a>
+                </div>
+                <div>
+                    <a href="#" class="scroll"><p>&#36;300.00</p><img src="./images/6.jpg" width="100%"></a>
+                </div>
+                <div>
+                    <a href="#" class="scroll"><p>&#36;300.00</p><img src="./images/18.jpg" width="100%"></a>
+                </div>
+            </div>
+        </div>
+      </section>
+    <footer><p>This will be a footer</p></footer>  
+    
+    <script>
+        $("body").on("contextmenu", "img", function(e) {
+          return false;
+        });  
+    </script>
+      
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 5) {
+                $("header").addClass("bg-color-change");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $("header").removeClass("bg-color-change");
+            }
+        });
+    </script>
+          
+  </body>
+</html>

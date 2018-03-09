@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="icon" href="images/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/contact.css">   
+    <meta http-equiv="imagetoolbar" content="no" />  
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js"></script> 
+      
+    <style media="screen">
+        * {box-sizing: border-box;}
+    </style>  
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="mobile-logo" title="Home">
+            A<span class="dot">.</span>
+        </a>
+        <label for="toggle" class="menu">&#9776;</label>
+        <!--<label for="toggle">&#x2715;</label>-->
+        <input type="checkbox" id="toggle">
+        
+      <nav>
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html" class="logo">A<span class="dot">.</span></a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="shop.html">Shop</a>
+         <div class="social-icons">
+
+            <ul>
+            <li>
+                <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+            </li>  
+            <li>
+                <i class="fab fa-twitter"></i>
+            </li>    
+          </ul>
+
+        </div> 
+      </nav>
+    </header>
+      <section id="home-landing">
+        <div class="landing-content">
+            <div class="break"></div>
+            <div class="parallax-banner" data-parallax="scroll" data-image-src="./images/contact.jpg">
+                <h1>Contact</h1>
+                <div class="banner-overlay"></div>
+            </div>
+            <div class="contact-form">
+                <p>Please fill out the form below, and I will be in touch with you soon.</p>
+                <div class="form-center">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+      </section>
+    <footer><p>This will be a footer</p></footer>  
+    
+    <script>
+        $("body").on("contextmenu", "img", function(e) {
+          return false;
+        });  
+    </script>
+      
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 5) {
+                $("header").addClass("bg-color-change");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $("header").removeClass("bg-color-change");
+            }
+        });
+    </script>
+          
+  </body>
+</html>

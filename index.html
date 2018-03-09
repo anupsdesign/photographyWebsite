@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="icon" href="images/icon.png"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style/main.css"> 
+    <meta http-equiv="imagetoolbar" content="no" />  
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>  
+    <style media="screen">
+        * {box-sizing: border-box;}
+    </style>  
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="mobile-logo" title="Home">
+            A<span class="dot">.</span>
+        </a>
+        
+        <label for="toggle" class="menu">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        
+      <nav>
+        <a href="index.html" class="active">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html" class="logo">A<span class="dot">.</span></a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">Shop</a>
+        <div class="social-icons">
+
+            <ul>
+            <li>
+                <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+            </li>  
+            <li>
+                <i class="fab fa-twitter"></i>
+            </li>    
+          </ul>
+
+        </div>  
+      </nav>
+        
+    </header>
+      <section id="home-landing">
+        <div class="landing-content">
+            <div class="grid">
+                <div>
+                    <a href="image.html" class="scroll"><p>i</p><img src="./images/12.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#two" class="scroll"><p>ii</p><img src="./images/13.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#three" class="scroll"><p>iii</p><img src="./images/3.jpg" width="100%" height="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#four" class="scroll"><p>iv</p><img src="./images/10.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#five" class="scroll"><p>v</p><img src="./images/4.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#six" class="scroll"><p>vi</p><img src="./images/9.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#seven" class="scroll"><p>vii</p><img src="./images/8.jpg" width="100%" height="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#eight" class="scroll"><p>viii</p><img src="./images/5.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#nine" class="scroll"><p>ix</p><img src="images/14.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#ten" class="scroll"><p>x</p><img src="./images/16.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#eleven" class="scroll"><p>xi</p><img src="./images/15.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#twelve" class="scroll"><p>xii</p><img src="./images/17.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#thirteen" class="scroll"><p>xiii</p><img src="./images/21.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+                <div>
+                    <a href="image.html#fourteen"><p>xiv</p><img src="./images/20.jpg" width="100%"></a>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+      </section>
+    <footer><p>This will be a footer</p></footer>  
+    
+    <script>
+        $("body").on("contextmenu", "img", function(e) {
+          return false;
+        });  
+    </script>
+      
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 5) {
+                $("header").addClass("bg-color-change");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $("header").removeClass("bg-color-change");
+            }
+        });
+    </script>
+          
+  </body>
+</html>

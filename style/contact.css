@@ -1,0 +1,80 @@
+.break{
+    height: 30px;
+}
+.parallax-banner{
+    width: 100%;
+    margin: 0 auto;
+    height: 50vh;
+    position: relative;
+
+}
+.banner-overlay{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.contact-form{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+}
+.form-center{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: thin solid #dfdfdf;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-family: 'Crimson Text', serif;
+}
+textarea{
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: thin solid #dfdfdf;
+    margin-bottom: 10px;
+    font-family: 'Crimson Text', serif;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-weight: lighter;
+    font-size: 3em;
+    margin: 0;
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 50%;left: 50%;transform: translate(-50%,-50%);
+}
+p{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Crimson Text', serif;
+}
+button{
+    font-size: 1em;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    position: relative;left: 50%;transform: translateX(-50%);
+    transition: .3s;
+    font-family: 'Crimson Text', serif;
+}
+button:hover{
+    cursor: pointer;
+    background-color: RGBA(18, 18, 18, .6);
+    color: #fff;
+    transition: .3s;
+}
