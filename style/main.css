@@ -271,8 +271,10 @@ footer p{
 .grid{
     grid-template-columns: repeat(auto-fill,minmax(310px,3fr));
 }
-
 .grid div{
     width: 310px;
 }
+footer p{
+    font-size: .65em;
+}    
 }
